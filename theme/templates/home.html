@@ -1,0 +1,41 @@
+{% load get_widget generate_type_data %} 
+
+
+<!-- Header Minimalist -->
+ {% generate_type_data request=request name='links' data='[{"tag":"","url":"/","name":"Accuel"},{"tag":"","url":"#","name":"Agence"},{"tag":"","url":"#","name":"Nos métiers"},{"tag":"","url":"#","name":"Portfolio"},{"tag":"","url":"#","name":"Contactez-nous"}]' mode='list' %} 
+
+
+
+ {% get_widget request=request slug="header-minimalist" text_message="Vous pouvez nous contactez pour avoir plus d’informations sur nos offres et promotions <a href='#' class='souligner bold third-color'>Cliquez-ici</a>" links=request.get_datas.links  %}
+
+
+<!-- Cover Minimalist -->
+ 
+
+ {% get_widget request=request slug="cover-minimalist" title="Nous sommes des experts dans la création d’intéraction numérique " text="Notre approche est nous concevons des solutions sur mesure pour chaque besoin, pour objectif de transformer toute idée à une expérience numérique non seulement fonctionnelle mais une expérience compléte et unique pour chaque projet." primary_btn_text="nos services" primary_btn_link="#" second_btn_text="Notre Agence" second_btn_link="#"  %}
+
+
+<!-- Block Static Minimalist -->
+ 
+
+ {% get_widget request=request slug="block-static-minimalist" title="Redéfinir vos idées en digital, par une équipe d’experts" sub_title="Notre Agence" text="Notre approche est nous concevons des solutions sur mesure pour chaque besoin,pour objectif de transformer toute idée à une expérience numérique non seulement fonctionnelle mais une expérience compléte et unique pour chaque projet. " btn_text="Contactez-nous" btn_link="#" image="/static/site/legacy/images/minimalist/assets/images/image.png"  %}
+
+
+<!-- Services Minimalist -->
+ 
+
+ {% get_widget request=request slug="services-minimalist" title="Nous avons le service qui vous convient pour vous montez Votre projet numérique" sub_title="Nos Services" text="Nous sommes des experts dans la création d’intéraction numérique qui permettent aux utilisateurs de profiter de la technologie à son plus haut potentiel."  %}
+
+
+<!-- Portfolio Minimalist -->
+ 
+
+ {% get_widget request=request slug="portfolio-minimalist" title="Notre Portfolio" sub_title="Portfolio" btn_text="Notre Portfolio" btn_link="#"  %}
+
+
+<!-- Footer Minimalist -->
+ 
+
+ {% get_widget request=request slug="footer-minimalist" title="Get In Touch" text="Contactez-nous pour plus d'informations" btn_text="Contactez-nous pour plus d'informations " btn_link="#"  %}
+
+
