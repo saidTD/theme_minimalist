@@ -1,0 +1,27 @@
+#portfolio-page {
+    padding-top: 160px;
+}
+
+.gallery-portfolio .large-column {
+    width: 48%;
+}
+
+.gallery-portfolio .standard-column {
+    width: 24%;
+}
+
+.standard-column + .standard-column, .large-column  + .standard-column  {
+    margin-left: 2%;
+}
+
+.standard-column  .preview-portfolio + .preview-portfolio {
+    margin-top: 5%;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    #portfolio-page {
+        padding-top: 60px;
+    }
+}

@@ -1,0 +1,45 @@
+#services-page {
+    background-image: url("../../images/background_dark.png");
+    background-repeat: no-repeat;
+    height: 580px;
+    padding: 80px 0;
+    box-sizing: border-box;
+}
+
+.introduction-service {
+    width: 50%;
+}
+
+.introduction-service h2 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+}
+
+.service-item {
+    width: 30%;
+}
+
+.service-item + .service-item {
+    margin-left: 3%;
+}
+
+.service-item h3 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-left: #107afe solid 6px;
+    padding-left: 24px;
+
+    font-size: 1.3rem;
+    line-height: 2.0rem;
+}
+
+.service-item .box30 {
+    padding-top: 10px;
+}
+
+
+@media screen and (max-width: 800px) {
+    #services-page {
+        padding-bottom: 40px;
+    }
+}

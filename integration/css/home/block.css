@@ -1,0 +1,13 @@
+.left-block-static {
+    width: 40%;
+}
+
+.right-block-static {
+    width: 50%;
+    margin-left: 5%;
+}
+
+.right-block-static h2 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+}

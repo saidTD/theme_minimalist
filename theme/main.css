@@ -1,0 +1,22 @@
+body {
+    font-size : 18px;
+    line-height: 28px;
+    font-family: 'Lato';
+
+}
+
+textarea {
+    font-family: 'Lato';
+}
+
+.icons-rs {
+    width : 25px;
+    height : 25px;
+}
+
+.instagram {
+    background-position: -40px 0;
+}
+.linkedin {
+    background-position: -90px 0;
+  }

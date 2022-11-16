@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% if request.site.favicon %}/media/{{request.site.favicon}}{% endif %}" type="image/x-icon" rel="shortcut icon">
+
+
+    <title>{% if request.site.name %}{{request.site.title_seo}}{% else %}Theme Minimalist{% endif %}</title>
+
+
+    <meta name="description" content="{% block description %}{{request.site.meta_description}}{% endblock %}">
+    <meta name="keywords" content="{% block keywords %}{{request.site.meta_keywords}}{% endblock %}">
+
+
+
+    <link rel="alternate" href="https://{{request.site.domain}}/" hreflang="fr-ma" />
+    <link href="{% block image_src %}{% endblock %}" rel="image_src" />
+
+    <meta property="og:image" content="{% block image_og %}{% endblock %}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+	<meta property="og:site_name" content="https://{{request.site.domain}}/" /> 
+	<meta property="og:description" content='{% block description_og %}{{request.site.meta_description}}{% endblock %}' />
+    <meta property="og:title" content="{% block title_og %}{{request.site.title_seo}}{% endblock %}">
+    <meta property="og:url" content="{% block url_og %}{{request.path_url}}{% endblock %}">
+    <meta property="og:locale" content="ma_MA" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="{{request.theme.static}}/assets/css/base.css" media="all" />
+    <link rel="stylesheet" href="{{request.theme.linkCSS}}" media="all" />
+
+    
+    {% for script_head in scripts.header %}
+        {{script_head.code|safe}}
+    {% endfor %}
+</head>
+<body>
+
+    {% for script_content in scripts.body %}
+        {{script_content.code|safe}}
+    {% endfor %}
+
+    <div id="prepend-body"></div>
+    {% block header %}
+    
+        {% get_widget request=request slug="header-minimalist" %}
+    
+    {% endblock %}
+
+
+
+    {% block body %}
+
+    {% endblock %}
+
+
+    {% for script_content in scripts.footer %}
+        {{script_content.code|safe}}
+    {% endfor %}
+
+
+
+    <script src="{% static 'site/js/dom.js' %}"></script>
+    <script src="{{request.theme.static}}/assets/js/script.js"></script>
+    <script src="{{request.theme.linkJS}}"></script>
+
+</body>
+</html>

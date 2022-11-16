@@ -1,0 +1,19 @@
+#cover-page {
+    height: 520px;
+    background: url("../../images/background.png") no-repeat right 0;
+}
+
+.block-cover-content {
+    width: 50%;
+    padding-top: 70px;
+}
+
+.block-cover-content h1 {
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+}
+
+#references li{
+    padding: 10px 25px;
+
+}

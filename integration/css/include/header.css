@@ -1,0 +1,55 @@
+.left-header {
+    width: 15%;
+}
+
+.right-header {
+    width: 15%;
+}
+.center-header {
+    width: 60%;
+}
+
+.center-header li a  {
+    display: block;
+    padding: 30px;
+    border-top: transparent solid 5px;
+}
+
+.center-header li a.active {
+    border-top: #107afe solid 5px;
+    color: #107afe;
+}
+
+.icon-menu-mobile {
+    width: 20px;
+    height: 20px;
+    background-image: url("../../images/icons/menu.png");
+}
+
+.menu-mobile {
+    width: 100%;
+    min-height: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    right: 0;
+    top: -800px;
+    opacity: 0;
+}
+
+.menu-mobile li a {
+    display: block;
+    padding: 10px 0;
+}
+
+.menu-mobile.open {
+    top: 0px;
+    opacity: 1;
+}
+
+.close-menu-mobile {
+    width: 20px;
+    height: 20px;
+    background: url("../../images/icons/close.png") no-repeat center center;
+    top: 20px;
+    right: 20px;
+}
