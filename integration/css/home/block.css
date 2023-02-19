@@ -1,13 +1,33 @@
 .left-block-static {
     width: 40%;
+    z-index: 200;
 }
 
 .right-block-static {
-    width: 50%;
+    width: 54%;
+    padding: 30px;
     margin-left: 5%;
+    box-sizing: border-box;
 }
 
 .right-block-static h2 {
     font-size: 2rem;
     line-height: 2.8rem;
+}
+
+.mode-bg .background-block-static{
+    width: 120%;
+    height: 100%;
+    top: -50px;
+    left: -20%;
+    background-color: blue;
+    opacity: 0.1;
+}
+
+.block-static.mode-bg {
+    margin-top: 100px;
+}
+
+.block-static.mode-bg .right-block-static {
+    margin-left: 2%;
 }
